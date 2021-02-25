@@ -18,11 +18,11 @@ SET(OPENDCP_URL "http://www.opendcp.org")
 #-------------------------------------------------------------------------------
 
 #--options----------------------------------------------------------------------
-OPTION(ENABLE_XMLSEC   "Enable XML digital singatures and security features" ON)
+OPTION(ENABLE_XMLSEC   "Enable XML digital singatures and security features" OFF)
 OPTION(ENABLE_OPENMP   "Enable OPENMP multithreading" ON)
 OPTION(ENABLE_RAGNAROK "Enable Ragnarok Encoder" OFF)
-OPTION(ENABLE_GUI      "Enable GUI compiling" ON)
-OPTION(ENABLE_CLANG    "Enable CLANG compiling (OSX)" ON)
+OPTION(ENABLE_GUI      "Enable GUI compiling" OFF)
+OPTION(ENABLE_CLANG    "Enable CLANG compiling (OSX)" OFF)
 OPTION(ENABLE_DEBUG    "Enable debug symbols" OFF)
 OPTION(BUILD_STATIC    "Enable debug symbols" ON)
 OPTION(GENERATE_LANGUAGE_FILES "Generate Translation files" OFF)
