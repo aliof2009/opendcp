@@ -134,7 +134,7 @@ int write_cpl_asset(opendcp_t *opendcp, xmlTextWriterPtr xml, asset_t asset) {
     }
 
     if (asset.essence_class == ACT_PICTURE) {
-        xmlTextWriterWriteFormatElement(xml, BAD_CAST "FrameRate", "%s", asset.frame_rate);
+        xmlTextWriterWriteFormatElement(xml, BAD_CAST "FrameRate", "%s", asset.edit_rate);
 
         if (opendcp->ns == XML_NS_SMPTE) {
             xmlTextWriterWriteFormatElement(xml, BAD_CAST "ScreenAspectRatio", "%s", asset.aspect_ratio);
